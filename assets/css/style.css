@@ -1,1 +1,12 @@
+body {
+    background-image: url(../../assets/images/painting-3135875_1280.jpg);
+    font-family: 'Raleway', sans-serif;
+}
 
+.footer {
+    margin-top: 2rem;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}

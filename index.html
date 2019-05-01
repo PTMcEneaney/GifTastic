@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!--bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -28,33 +29,44 @@
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway" rel="stylesheet">
+
     <script src="assets/javascript/app.js" type="text/javascript"></script>
 
 </head>
 
 <body>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">GifTastic!</h1>
-                <p class="lead">Use this to find gifs from my favorite artists, or add your own!
-                </p>
-            </div>
-        </div>
+    <div class="jumbotron jumbotron-fluid">
         <div class="container">
-
-        <form class="form-group row">
-            <div class="col-8 btnDiv"></div>
-            <div class="col-4 p-2">
-                <input type="text" class="form-control" id="form" placeholder="Banksy">
-                <small class="form-text text-muted">Enter a Painter's Name</small>
-                <button type="submit" class="btn btn-primary" id="newBtn">Submit</button>
-            </div>
-        </form>
-        <div class="row" id="gifDiv">
-
+            <h1 class="display-4">GifTastic!</h1>
+            <p class="lead">Use this to find my favorite artist-inspired gifs, or add your own!
+            </p>
         </div>
     </div>
-    <footer></footer>
+    <div class="container main bg-light p-3 rounded">
+            <form class="form-group row">
+                <div class="col-8 btnDiv"></div>
+                <div class="col-4 px-4 pt-2">
+                    <input type="text" class="form-control" id="form" placeholder="Banksy">
+                    <small class="form-text text-muted float-left my-1 ml-1">Enter a Artist's Name</small>
+                    <button type="submit" class="btn btn-primary float-right btn-block" id="newBtn">Submit</button>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-12 m-2" id="gifDiv">
+                    <!-- <img src="https://media0.giphy.com/media/ZGRqRg62P4RIQ/200_s.gif"> -->
+                </div>
+            </div>
+    </div>
+    <div class="container bg-light p-0 rounded footer">
+        <div class="row text-center mx-0">
+            <div class="col-12">
+                <p class="float-left m-3"><a href="https://ptmceneaney.github.io/Responsive-Portfolio/"
+                        target="_blank">Learn about the creator of this game!</a></p>
+                <p class='float-right m-3'>© 2019 Copyright</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -16,7 +16,16 @@ $(document).ready(function () {
 
 
     var urlCreator = function() {
-        
+        var baseURL = "https://api.giphy.com/v1/gifs/search?";
+
+        // Begin building an object to contain our API call's query parameters
+        // Set the API key
+        var queryParams = { "api_key": "api_key=4J80i9OSkoZGm3lxqIXzE1rSwiOXkvAi" };
+
+        // Grab text the user typed into the search input, add to the queryParams object
+        queryParams.q = "q=" + searchPhrase[1] + "&";
+
+        queryURL = (baseURL + queryParams.q + queryParams.api_key);
     }
 
     /* var renderBtn = function() {

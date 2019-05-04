@@ -23,6 +23,7 @@ $(document).ready(function () {
             btn.text(artists[i]);
             btn.addClass('btn btn-outline-secondary m-2 artistBtn');
             btn.attr("type", "button");
+
             //replaces any spaces in the ID with Plus signs
             var btnID = artists[i].split(' ').join('+');
             btn.attr("id", btnID);
@@ -68,6 +69,13 @@ $(document).ready(function () {
             newImg.attr("data-animate", animated);
             newImg.attr("data-state", "still");
 
+            // var download = $('<button')
+            // download.attr("method", "get");
+            // download.attr("action", webClient);
+            // using (WebClient webClient = new WebClient()) 
+            // {
+            // webClient.DownloadFile(results[i].images.fixed_height.url, "image.gif") ; 
+            // }
 
             var newRating = $('<p>');
             newRating.text("Rating: " + rating);
@@ -75,6 +83,8 @@ $(document).ready(function () {
 
             $(dynamicDiv).append(newImg);
             $(dynamicDiv).append(newRating);
+            // $(dynamicDiv).append(download);
+
 
             $('#gifDiv').append(dynamicDiv);
 

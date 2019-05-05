@@ -1,6 +1,7 @@
 body {
     background-image: url(../../assets/images/painting-3135875_1280.jpg);
     font-family: 'Raleway', sans-serif;
+    min-width: 475px;
 }
 
 .footer {
@@ -12,4 +13,10 @@ h1 {
 }
 small {
     letter-spacing: 1.5px;
+}
+.titles {
+    font-size: 10px;
+}
+p {
+    margin: 5px 0px 5px 0px;
 }
